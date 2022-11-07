@@ -1,0 +1,430 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(fontes/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: sedan sc;
+    src: url(fontes/SedanSC-Regular.ttf);
+}
+
+h1{
+    font-family: poppins;
+    font-size: 36px;
+    color: rgba(92, 172, 14, 1)
+}
+
+h2{
+    font-family: poppins;
+    font-size: 32;
+    color: rgba(51, 51, 51, 1);
+}
+
+p{
+    font-family: poppins;
+    font-size: 16px;
+    color: rgba(27, 48, 0, 0.88);
+}
+
+li {
+    padding-right: 40px;
+    text-decoration:none;
+    position: relative;
+    float:left;
+    display:block;
+}
+
+.list-menu{
+    padding-top: 20px;
+    margin-left: 250px;
+}
+nav{
+    float: right;
+    position: fixed;
+    color: black;
+    background: rgb(255, 255, 255);
+    height: 10vh;
+    width: 100%;
+    z-index: 2  ;
+    }
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: poppins;
+    font-size: 15px;
+}
+
+nav .list-menu a{
+    text-decoration: none;
+    padding: 3px;    
+    transform: 2ms ease-in;
+    position: relative;
+    cursor: pointer;
+
+}
+
+nav .list-menu a:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    background-color: green ;
+    transition: all 1.5s ease;
+}
+
+nav .list-menu a:hover:before{
+    width: 100%;
+}
+
+a:hover{
+    color:rgba(141, 164, 111, 0.73)
+}
+.logo a{
+   font-family: sedan sc;
+   margin-left: 70px;
+   position: relative;
+   float: left ;
+   padding-top: 15px;
+   font-size: 25px;
+   text-transform: uppercase;
+}
+
+
+.barra-pesquisa{
+    background: rgba(100, 107, 73, 1);
+    height: 30px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    right: 20%;
+    top: 15px
+}
+
+.search-text{
+    border: none;
+    background: none;
+    color: rgba(238, 255, 217, 0.88)   ;
+    outline: none;
+    float: left;
+    padding: 15px;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 240px;
+}
+
+
+.imagem-principal{
+    width: 400px;
+    float: right;
+    margin-right: 100px;
+    margin-top: -300px;
+}
+
+header{
+    background-image: url(imagens/fundo3.svg);
+   background-size: cover;
+    background-position-y: 0px ;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+
+    }
+.dobra1{
+    display: inline-block;
+    align-items: center;
+
+}
+ .textp{
+   margin-top: -200px;
+   padding-left: 200px;
+   align-items: left;
+   z-index: -1;
+}
+
+.botao {
+    display: flex;
+    margin-top: 20px;
+    z-index: 1;
+    color: white;
+}
+
+button a{
+    color: white;
+}
+
+button{
+    padding-top: 7px;
+    margin-left: 20px;
+    border: none;
+    width: 170px ;
+    height: 40px;
+    background-color:rgb(89, 114, 0);
+    padding-left: 10px;
+    border-radius: 20px;
+    color: white;
+    font-family: poppins;
+    text-align: center;
+    transition: 1.5s;
+    padding-left: 2%;
+    cursor: pointer;
+
+    }
+
+ button:hover{
+    color:rgb(108, 175, 108);
+    background-color: rgb(0, 46, 10);
+    border:none
+}
+
+.linha{
+    margin-top: -400px;
+}
+
+.textp h1{
+   color: rgba(32, 54, 10, 1)
+}
+
+.detalhe-titulo1{
+
+    margin-left: 350px;
+    margin-top: 300px;
+}
+
+.historia{
+    background-image: url(imagens/fundo2.svg);
+    height: 2300px;
+    background-size: cover;
+    background-position-y: 0px ;
+    background-repeat: no-repeat;
+    margin-top: -400px;
+   
+}
+
+.historia h1{
+    text-align: center;
+    padding-top: 150px;
+}
+
+.historia h2{
+    margin-top: 50px;
+}
+
+.titulo1{
+    display: inline-flex;
+    margin-left: 500px;
+    
+}
+
+.detalhe5{
+    width: 300px;
+    margin-top: 50px;
+    margin-left: -70px;
+}
+
+.p1{
+    display: flex;
+    margin-right: 300px;
+    padding-left: 100px;
+}
+.p1 p{
+    float: right;
+    margin-top: 20px;
+}
+
+.p1 img{
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 2 50px;
+    z-index: 1;
+    position:relative;
+        
+}
+
+.sombraimg{
+    width: 400px;
+    height: 350px;
+    background-color: rgba(112, 146, 68, 0.88);
+    margin-top: -350px;
+    transform: rotate(-100deg);
+    
+}
+
+.p2 {
+    display: flex;
+    margin-top: -150px;
+}
+
+.p2 img{
+    width: 350px;
+    margin-right: -15px;
+
+}
+
+.im1{
+    margin-top: 100px;
+    margin-right: 200px;
+
+}
+
+.im2{
+    margin-top: -300px;
+    margin-left: 100px;
+}
+
+.textp2{
+    margin-top: 200px;
+    margin-left: 200px;
+    padding-right: -40px;
+}
+
+.p3{
+    display: flex;
+    padding-top: 500px;
+    margin-left: -1200px;
+    margin-right: 150px;
+
+}
+
+.img3{
+    margin-left:  -100px;
+    padding-left: 400px;
+    padding-right: 75PX;
+    z-index: 1;
+}
+
+.textp3{
+    padding-left: -50px;
+    margin-right: 50px;
+    margin-top: 50px;
+
+}
+
+.textp3 p{
+    width: 500px;
+}
+.sombraimg3{
+    width: 300px;
+    height: 350px;
+    background-color: rgba(98, 123, 0, 0.81);
+    margin-top: -340px;
+    margin-left: 50px;
+    transform: rotate(7deg);
+    position: relative;
+    z-index: -1;
+
+
+}
+
+.p4{
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: 30px;
+}
+
+.p5{
+    display: flex;
+    
+}
+
+.p5 img{
+    width: 400px;
+    margin-right: 150px;
+    padding-left: 40px;
+}
+.sombraimgp5{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(65, 79, 55, 1);
+    margin-top: -270px;
+    transform: rotate(-10deg);
+    position: relative;
+    z-index: -1;
+}
+.textp5{
+    margin-left: 130px;
+    margin-top: 30px;
+}
+
+.terras-indigenas{
+    background: url(imagens/fundo5.svg);
+    background-size: cover;
+    background-position-y: 0px ;
+    background-repeat: no-repeat;
+    margin-top: -100px;
+    padding-bottom: 100px;
+  
+}
+.terras-indigenas h1{
+      padding-top: 200px;
+}
+.terras-indigenas .titulo{
+    display: inline-flex;
+    align-items: center;
+    margin-left: 500px;
+}
+
+.terras-indigenas .detalhe{
+    padding-top: 150px;
+}
+.p6{
+    display: flex;
+    margin: 100px;
+}
+h3{
+    font-family: poppins;
+    text-transform: uppercase;
+    color: rgba(27, 48, 0, 0.88);
+    font-size: 24px;
+}
+
+.textp6{
+    margin-top: -50px;
+    padding-left: 100px;
+}
+
+.dados{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+}
+
+.infos h1{
+    margin-left: 190px;
+    color: rgba(37, 57, 11, 0.64);
+    text-align: left;
+    margin-top: -250px;
+}
+
+.imgp6 .img1{
+    margin-left: 250px;
+    margin-top: -120px;
+}
+footer{
+    width: 100%;
+    height: 13vh;
+    background-color: rgba(1, 22, 1, 1);
+    color: white;
+    text-align: center;
+    padding-top: 13px;
+    font-family: poppins;
+    font-size: 13px;
+    }
+

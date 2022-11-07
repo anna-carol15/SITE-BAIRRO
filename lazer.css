@@ -1,0 +1,466 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(fontes/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: sedan sc;
+    src: url(fontes/SedanSC-Regular.ttf);
+}
+
+h1{
+    font-family: poppins;
+    font-size: 36px;
+    color: rgba(92, 172, 14, 1)
+}
+
+h2{
+    font-family: poppins;
+    font-size: 32;
+    color: rgba(51, 51, 51, 1);
+}
+
+h3{
+    font-family: poppins;
+    text-transform: uppercase;
+    color: rgba(27, 48, 0, 0.88);
+    font-size: 24px;
+}
+
+p{
+    font-family: poppins;
+    font-size: 16px;
+    color: rgba(27, 48, 0, 0.88);
+}
+
+li {
+    padding-right: 40px;
+    text-decoration:none;
+    position: relative;
+    float:left;
+    display:block;
+}
+
+.list-menu{
+    padding-top: 20px;
+    margin-left: 250px;
+}
+nav{
+    float: right;
+    position: fixed;
+    color: black;
+    background: rgb(255, 255, 255);
+    height: 10vh;
+    width: 100%;
+    z-index: 3 ;
+    }
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: poppins;
+    font-size: 15px;
+}
+
+nav .list-menu a{
+    text-decoration: none;
+    padding: 3px;    
+    transform: 2ms ease-in;
+    position: relative;
+    cursor: pointer;
+
+}
+
+nav .list-menu a:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    background-color: green ;
+    transition: all 1.5s ease;
+}
+
+nav .list-menu a:hover:before{
+    width: 100%;
+}
+
+a:hover{
+    color:rgba(141, 164, 111, 0.73)
+}
+.logo a{
+   font-family: sedan sc;
+   margin-left: 70px;
+   position: relative;
+   float: left ;
+   padding-top: 15px;
+   font-size: 25px;
+   text-transform: uppercase;
+}
+
+
+.barra-pesquisa{
+    background: rgba(100, 107, 73, 1);
+    height: 30px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    right: 20%;
+    top: 15px
+}
+
+.search-text{
+    border: none;
+    background: none;
+    color: rgba(238, 255, 217, 0.88)   ;
+    outline: none;
+    float: left;
+    padding: 15px;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 240px;
+}
+
+
+.imagem-principal{
+    width: 400px;
+    float: right;
+    margin-right: 100px;
+    margin-top: -300px;
+}
+
+header{
+    background-image: url(imagens/fundo3.svg);
+   background-size: cover;
+    background-position-y: 0px ;
+    background-repeat: no-repeat;
+    position: relative;
+
+    }
+
+
+    .dobra1{
+        display: inline-block;
+        align-items: center;
+    
+    }
+     .textp{
+       margin-top: -200px;
+       padding-left: 200px;
+       align-items: left;
+       z-index: -1;
+    }
+    
+    .botao {
+        display: flex;
+        margin-top: 20px;
+        z-index: 1;
+        color: white;
+    }
+    button a{
+        color: white;
+    }
+    button{
+        padding-top: 7px;
+        margin-left: 20px;
+        border: none;
+        width: 170px ;
+        height: 40px;
+        background-color:rgb(89, 114, 0);
+        padding-left: 10px;
+        border-radius: 20px;
+        color: white;
+        font-family: poppins;
+        text-align: center;
+        transition: 1.5s;
+        padding-left: 2%;
+        cursor: pointer;
+        }
+    
+     button:hover{
+        color:rgb(108, 175, 108);
+        background-color: rgb(0, 46, 10);
+        border:none
+    }
+    
+    .linha{
+        margin-top: -400px;
+    }
+    
+    .textp h1{
+       color: rgba(32, 54, 10, 1)
+    }
+    
+    .detalhe-titulo1{
+    
+        margin-left: 350px;
+        margin-top: 300px;
+    }   
+
+    
+    .picos{
+        background: url(imagens/fundo14.svg);
+        background-size: cover;
+    background-position-y: 0px ;
+    background-repeat: no-repeat;
+    margin-top: -350px;
+    position: relative;
+    height: 2000px;
+
+    }
+    .picos .titulo{
+        display: flex;
+        align-items: center;
+        margin-left: 500px;
+        padding-top: 50px;
+    }
+    .introducao{
+        margin-left: 150px;
+        margin-right: 150px;
+        text-align: center;
+    }
+    .introducao img{
+        float: right;
+        padding-left: 100px;
+    }
+    .introducao p{
+        padding-top: 70px;
+        margin-top: 50px;
+    }
+
+    .img2{
+        margin-top: -250px;
+        margin-right: 30px;
+    }
+
+    .picos1{
+        display: flex;
+        margin-top: 150px;
+        text-align: center;
+    }
+    .jaragua{   
+        margin-top: 30px;
+        width: 500px;
+        height: 300px;
+        background-color: rgba(232, 242, 191, 1);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.212);
+        display: flex;
+        margin-left: 100px;
+    }
+
+    .jaragua p{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 100px;
+        text-align: left;
+    }
+
+    .papagaio{
+        margin-top: 30px;
+        width: 500px;
+        height: 300px;
+        background-color: rgba(232, 242, 191, 1);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.212);
+        display: flex;
+        margin-left: 150px;
+    }
+
+    .papagaio img{
+        padding-right: -300px;
+    }
+
+    .papagaio p{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 100px;
+        text-align: right;
+    }
+
+    .outrosm .titulo{
+        display: flex;
+        align-items: center;
+        margin-left: 500px;
+        padding-top: 50px;
+    }
+
+    .quadrado{
+        padding: 30px;
+        width: 300px;
+        height: 500px;
+        background-color: rgba(211, 226, 159, 1);
+        border: solid 7px white;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.212);
+    }
+    .quadrado p{
+        padding-top: 20px;
+        font-size: 15px;
+    }
+    .morro{
+        align-items: center;
+        text-align: center;
+        padding-right: 40px;
+        
+    }
+
+    .outrosm1{
+        display: flex;
+        margin-left: 200px;
+        
+    }
+
+    .outrosm h3{
+        margin-top: 60px;
+        margin-bottom: 30px;
+
+    }
+
+    .parque .titulo{
+        display: flex;
+        align-items: center;
+        margin-left: 450px;
+        padding-top: 50px;
+    }
+
+    .parque{
+        background: url(imagens/fundo15.svg);
+        background-size: cover;
+    background-position-y: 0px ;
+    background-repeat: no-repeat;
+    margin-top: -200px;
+    position: relative;
+    height: 2900px;
+
+    }
+    .parque h2{
+        margin-left: 200px;
+        margin-top: 60px;
+        font-size: 36px;
+    }   
+
+    .quadroe h3{
+        text-align: right;
+        margin-right: 500px;
+        margin-top: 50px;
+    }
+
+    .quadroe img{
+        margin-left: 100px;
+        margin-top: -40px;
+    }
+
+    .fundo{
+        width: 900px;
+        height: 250px;
+        background-color: rgba(198, 222, 180, 1);
+        margin-left: 300px;
+        margin-top: -230px;
+    }
+
+    .fundo p{
+        padding-left: 210px;
+        padding-top: 50px;
+        text-align: left;
+        padding-right: 50px;
+
+    }
+
+    .quadrod h3{
+        text-align: left;
+        margin-left: 450px;
+        margin-top: 80px;
+    }
+    .quadrod img{
+        margin-left: 900px;
+        margin-top: -40px;
+    }
+
+    .fundo2{
+        width: 900px;
+        height: 250px;
+        background-color: rgba(198, 222, 180, 1);
+        margin-left: 150px;
+        margin-top: -230px;
+    }
+
+    .fundo2 p{
+        padding-right: 210px;
+        padding-top: 50px;
+        text-align: left;
+        padding-left: 50px;
+
+    }
+
+    .quadroe1{
+        margin-top: 80px;
+    }
+
+    .quiosques img{
+        float: left;
+        padding-right: 100px;
+    }
+
+    .quiosques{
+        margin-left: 150px;
+        margin-top: 30px;
+        margin-right: 150px;
+    }
+    
+    .quiosques p{
+        padding-top: 70px;
+    }
+
+    h4{
+        font-family: poppins;
+        color: rgba(2, 108, 0, 1)
+    }
+
+    .paisagens1 h2{
+        margin-top: 150px;
+        text-align: right;
+        margin-right: 300px;
+
+    }
+    
+    .paisagens1 h4{
+        text-align: right;
+        margin-right: 300px;
+
+    }
+
+    .paisagens{
+        display: flex;
+        margin-right: 150px;
+        margin-left: 150px;
+        margin-top: 30px;
+    }
+
+    .paisagens p{
+        padding-right: 100px;
+        padding-top: 100px;
+        text-align: right;
+    }
+
+    footer{ 
+        width: 100%;
+        height: 13vh;
+        background-color: rgba(1, 22, 1, 1);
+        color: white;
+        text-align: center;
+        padding-top: 13px;
+        font-family: poppins;
+        font-size: 13px;
+        }
+    
